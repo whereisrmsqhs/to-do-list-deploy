@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My To Do List</title>
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="weather-container">
+        <span class="loc">위치</span>
+        <span class="temperature">온도</span>
+        <span class="weather">날씨</span>
+        <span class="weather-specific">로딩중</span>
+      </div>
+      <div class="count">
+        <a href="https://github.com/whereisrmsqhs/VanillaJS/tree/main/MAIN" target="_blank"><span class="d-day">FrontEnd 공부한지 1일차</span></a>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1 id="clock">00:00</h1>
+      <h2 id="fullDay">2024.02.24 SAT</h2>
+      <form id="login-form" class="hidden">
+        <input
+          class="typeName"
+          type="text"
+          placeholder=" Who are you?"
+          required
+        />
+        <button>Log In</button>
+      </form>
+      <div class="welcome hidden">
+        <span class="hi"></span>
+        <button class="logOut">Log Out</button>
+      </div>
+      <form class="todo-container">
+        <input class="todo-input" type="text" maxlength="40" required>
+        <div><string>Write your To Do!</string></div>
+      </form>
+      <ul class="todo-list"></ul>
+      <div class="quote-container">
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      </div>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/dday.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
